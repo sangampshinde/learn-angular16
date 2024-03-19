@@ -1,0 +1,23 @@
+<h6>ngClass</h6>
+
+<!-- example 1 -->
+<div [ngClass]="'primary big'">Sample Text</div>
+
+<!-- example 2 -->
+<div ngClass="primary big">Sample Text</div>
+
+<!-- ng class with array -->
+<div [ngClass]="['primary','big']">Sample Text</div>
+
+<!-- case-1 -->
+<div [ngClass]="['primary big','italics']">Sample Text</div>
+
+<!-- ng class with object -->
+<div [ngClass]="{'primary':true, 'big':true}">Sample Text</div>
+
+<!-- case-1 -->
+<div [ngClass]="{'primary italics':true,'big':true}">Sample Text</div>
+
+<div [ngClass]="{'is-active':true,'big':true}">Sample Text</div>
+
+

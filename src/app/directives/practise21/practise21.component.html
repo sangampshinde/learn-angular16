@@ -1,0 +1,12 @@
+<!-- <div *ngFor="let ele of array">
+  {{ele.id}}-{{ele.name}}
+</div>
+<button (click)="replace()">Replace</button> -->
+
+<!-- trackby-solution [to see the change comment above code]-->
+<div *ngFor="let ele of array ; trackBy:identify ">
+  {{ele.id}} - {{ele.name}}
+  
+</div>
+<button (click)="replace()">Replace</button>
+<button (click)="refresh()">Refresh</button>

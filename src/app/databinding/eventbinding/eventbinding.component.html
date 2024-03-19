@@ -1,1 +1,10 @@
-<p>eventbinding works!</p>
+<!-- example 1 -->
+
+<h1 [innerText]="title"></h1>
+<button (click)="clickMe()">clickHere</button>
+<p>you have clicked = {{clickCount}}</p>
+
+<!-- example 2 -->
+<button on-click="clickMe2()">click</button>
+<p>example 2 you clicked {{clickCount1}}</p>
+

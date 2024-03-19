@@ -1,0 +1,18 @@
+<!-- <input type="text" name="name" (change)="nameChange($event)">
+
+country:
+<select name="country" (change)="(countryChanged($event))">
+    <option [ngValue]="null" disabled>Select Country</option>
+    <option *ngFor="let country of countries" [ngValue]="country.id">{{country.name}}</option>
+</select> -->
+
+Name
+<input type="text" name="name1" (change)="name1Changed($event)">
+ 
+ 
+<br>
+country
+<select name="country1" (change)="country1Changed($event)" >
+  <option [ngValue]="null" disabled>Select Country</option>
+  <option *ngFor="let country of countries" [ngValue]="country.id">{{country.name}}</option>
+</select>

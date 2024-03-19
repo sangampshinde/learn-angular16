@@ -1,0 +1,14 @@
+<div class="container m-3">
+    
+<table class="table-bordered">
+    <tr *ngFor="let movie of movies let i=index">
+        <td>{{i}}</td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.director}}</td>
+        <td>{{movie.cast}}</td>
+        <td>{{movie.releaseDate}}</td>
+    </tr>
+</table>
+
+</div>
+

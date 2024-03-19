@@ -1,0 +1,6 @@
+<h6>css based on flag value</h6>
+
+<div [ngClass]="flag ? 'primary': 'secondary'">
+    SampleText
+    <button (click)="flag = !flag">Change Color</button>
+</div>

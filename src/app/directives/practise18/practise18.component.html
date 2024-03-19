@@ -1,0 +1,27 @@
+<h6>Angular ngStyle Directive</h6>
+<div class="m-5">
+    <label class="form-label">enter colour name:</label>
+    <input type="text" class="form-control" [(ngModel)]="color">
+    <div [ngStyle]="{'color':color}">Change my color</div>
+</div>
+<hr>
+
+<div class="text-center" [ngStyle]="{'background-color':status === error ? 'red':'blue',
+                                     'color':'white'                                   }"> this is example 2</div>
+
+<hr>
+<p>ngStyle multiple attributes</p>
+
+<p class="text-center" [ngStyle]="{'color':'orange',
+                                    'font-size.px':30,
+                                    'font-weight':'bold',
+                                    'background-color':'green',
+                                   }"                             > multiple property using ng style</p>
+<hr>
+<p>Specifying CSS Units in ngStyle</p>
+<div>
+    <label class="form-label">size in px</label>  
+    <input type="text"  class="form-control"  [(ngModel)]="size">
+    <p  [ngStyle]="{'font-size.px':size}">this a simple paragraph</p>
+
+</div>

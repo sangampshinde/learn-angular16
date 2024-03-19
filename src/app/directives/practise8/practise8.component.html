@@ -1,0 +1,14 @@
+<div class="m-4">
+    <div>
+        <code>ngSwitch example ng-template [ngSwitchCase]="".</code>
+    </div>
+    <select [(ngModel)]="selectedValue">
+        <option *ngFor="let item of items" [value]="item.name">{{item.name}}</option>
+    </select>
+
+<div [ngSwitch]="selectedValue">
+    <ng-template [ngSwitchCase]="'One'">One is Selected</ng-template>
+    <ng-template [ngSwitchCase]="'Two'">Two is Selected</ng-template>
+    <ng-template ngSwitchDefault>This is Default</ng-template>
+</div>
+</div>

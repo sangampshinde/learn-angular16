@@ -1,0 +1,31 @@
+<div class='card'>
+    <div class='card-header'>
+      Sharing Templates
+    </div>
+    <div class="card-body">
+
+    <div>
+      <select [(ngModel)]="selectedValue4">
+        <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>
+      </select>
+    </div>
+
+    <ng-container [ngSwitch]="selectedValue4">
+      <ng-container *ngSwitchCase="'One'">
+        <ng-container *ngTemplateOutlet="sharedTemplate12"></ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'Two'">
+        <ng-container *ngTemplateOutlet="sharedTemplate12"></ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'Three'">
+        <ng-container *ngTemplateOutlet="sharedTemplate34"></ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'Four'">
+        <ng-container *ngTemplateOutlet="sharedTemplate34"></ng-container>
+      </ng-container>
+      <ng-template #sharedTemplate12>Shared between 1,2</ng-template>
+      <ng-template #sharedTemplate34>Shared between 3,4</ng-template>
+      <ng-container *ngSwitchDefault>Default Template</ng-container>
+    </ng-container>
+  </div>
+</div>

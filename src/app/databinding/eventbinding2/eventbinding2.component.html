@@ -1,0 +1,74 @@
+<p>{{title}}</p>
+<!-- ............................................................. -->
+
+
+
+
+
+
+
+<label for="">Enter something</label>
+<br>
+<input (input)="handleInput($event)">
+<p>You entered:{{value}}</p>
+<!-- -------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+<!-- Template reference variable -->
+<h2>Template Reference Variable</h2>
+<label for="">Enter something</label>
+<br>
+<input #el (input)="handleInput1(el)">
+<p>You have entered : {{val}}</p>
+
+
+
+<hr>
+
+
+
+
+
+
+<h4> Key event filtering (with key.enter) </h4>
+<input (keyup)="value1= $any($event.target).value"/>
+<p>You entered {{value1}}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<h4>(keyup.enter)</h4> 
+<input (keyup.enter)="value2=$any($event.target).value">
+<p>You entered {{value2}}</p>
+<hr>
+
+
+
+
+
+
+
+<h4> Here is an interesting example. On pressing enter key it updates the value3 variable and on escape clears the variable.</h4>
+<input (keyup.enter)="value3=$any($event.target).value">
+<p>You entered {{value3}}</p>
+
+
+
+

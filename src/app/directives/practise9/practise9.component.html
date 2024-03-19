@@ -1,0 +1,42 @@
+<div class="m-5">
+<div>
+    <select [(ngModel)]="selectVal">
+      <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>
+    </select>
+ 
+ 
+    <div [ngSwitch]="selectVal">
+      <div *ngSwitchCase="'One'">One is Selected</div>
+      <div *ngSwitchDefault>This is Default 1</div>
+      <div *ngSwitchCase="'Two'">Two is Selected</div>
+      <div *ngSwitchDefault>This is Default 2</div>
+    </div>
+ 
+ 
+  </div>
+</div>
+
+<div class="m-5">
+    <!-- select and switchcase div in one div container its imporatnt -->
+    <div>
+        <select [(ngModel)]="selectVal">
+        <option *ngFor="let item of items" [value]="item.name">{{item.name}}</option>
+        </select>
+
+        <div [ngSwitch]="selectVal">
+            <div *ngSwitchCase="'One'">1</div>
+            <div *ngSwitchCase="'Two'">2</div>
+            <div *ngSwitchCase="'Three'">3</div>
+            <div *ngSwitchCase="'Four'">4</div>
+            <div *ngSwitchDefault>Default</div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------->
+
+</div>
+ 
+
+
+
+
+

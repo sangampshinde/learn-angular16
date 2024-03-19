@@ -1,0 +1,14 @@
+<h1>ngIf Else</h1>
+
+<div class="row">
+    <input type="checkbox" [(ngModel)]="showMe">
+</div>
+
+<p *ngIf="showMe;else elseBlock">
+    ShowMe is checked
+</p>
+
+<ng-template #elseBlock>
+    <p>ShowMe is unchecked Using elseBlock</p>
+</ng-template>
+

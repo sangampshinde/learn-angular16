@@ -1,0 +1,15 @@
+<h6>Conditionally applying class</h6>
+
+<ul>
+    <li *ngFor="let num of numbers">
+        <div [ngClass]="getClass(num)">{{num}}</div>
+    </li>
+</ul>
+
+<hr>
+
+<ul>
+    <li *ngFor="let num of numbers">
+       <div [ngClass]="{ primary : num >= 50 , secondary : num < 50 }">{{num}}</div>
+    </li>
+</ul>

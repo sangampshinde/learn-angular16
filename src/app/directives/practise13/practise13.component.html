@@ -1,0 +1,27 @@
+<h3>ngIf then else</h3>
+
+<div class="row">
+    <input type="checkbox" [(ngModel)]="showMe">
+</div>
+
+<div *ngIf="showMe; then thenBlock else elseBlock ">
+    <p> ngIf then else </p>
+</div>
+
+<ng-template #thenBlock>
+    <p>#thenBlock is executed</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>#elseBlock is executed</p>
+</ng-template>
+
+
+<h1>using hidden </h1>
+
+<p [hidden]="showMe"> 
+    content to render, when the condition is true  using hidden property binding 
+</p>
+<p [hidden]="!showMe">
+    content to render, when the condition is false. using hidden property binding
+</p>

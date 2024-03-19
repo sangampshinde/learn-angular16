@@ -1,0 +1,6 @@
+<h2>Two way using property & Event Binding </h2>
+
+<h3>example-3</h3>
+<input type="text" [value]="name" (input)="name=$event.target.value">
+<p>you entered: {{name}}</p>
+<button (click)="onClear()">clear</button>

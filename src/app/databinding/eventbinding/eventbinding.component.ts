@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class EventbindingComponent {
 
+//example 1
+
+title='event-binding examples';
+clickCount=0;
+clickMe(){
+  this.clickCount++;
+}
+
+//example 2
+clickCount1=0;
+clickMe2(){
+  this.clickCount1++;
+}
+
 }
