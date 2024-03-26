@@ -1,0 +1,11 @@
+<p class="display-6">{{title}}</p>
+<p> Unformatted date : {{toDate }} </p>
+<p>Formatted date : {{toDate | date}}</p>
+<hr>
+<p>passing arguments to pipes 'medium'</p>
+{{toDate | date:'medium'}}
+<hr>
+<p>chainning pipes</p>
+{{toDate | date | uppercase}}
+<hr>
+

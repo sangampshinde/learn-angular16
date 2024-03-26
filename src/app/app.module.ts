@@ -60,6 +60,20 @@ import { Practise24Component } from './directives/practise24/practise24.componen
 import{ttToggleDirective} from './ttToggle.directive';
 import { Practise25Component } from './directives/practise25/practise25.component';
 import{ttTooltipDirective} from './Tooltip.directive';
+// pipes
+import { Pipe1Component } from './pipes/pipe1/pipe1.component';
+import { Pipe2Component } from './pipes/pipe2/pipe2.component';
+import { Pipe3Component } from './pipes/pipe3/pipe3.component';
+import { Pipe4Component } from './pipes/pipe4/pipe4.component';
+import { Pipe5Component } from './pipes/pipe5/pipe5.component';
+import { Pipe6Component } from './pipes/pipe6/pipe6.component';
+import { Pipe7Component } from './pipes/pipe7/pipe7.component';
+// custom pipe
+import{ TempConverterPipe } from './temp-convertor.pipe';
+import { CustompipeComponent } from './pipes/custompipe/custompipe.component';
+import { DatepipeComponent } from './pipes/datepipe/datepipe.component';
+import { Pipe8Component } from './pipes/pipe8/pipe8.component';
+import { Pipe9Component } from './pipes/pipe9/pipe9.component';
 
 
 
@@ -128,8 +142,21 @@ import{ttTooltipDirective} from './Tooltip.directive';
       Practise24Component,
       ttToggleDirective,
       Practise25Component,
-      ttTooltipDirective
-      
+      ttTooltipDirective,
+// pipes
+      Pipe1Component,
+      Pipe2Component,
+      Pipe3Component,
+      Pipe4Component,
+      Pipe5Component,
+      Pipe6Component,
+      Pipe7Component,
+  // custompipes
+      TempConverterPipe,
+  CustompipeComponent,
+  DatepipeComponent,
+  Pipe8Component,
+  Pipe9Component,
       
      
     

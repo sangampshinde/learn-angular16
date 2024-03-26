@@ -1,0 +1,19 @@
+<h3>Using Date Pipe </h3>
+<p>Unformatted date : {{toDate }} </p> 
+<p>Formatted date : {{toDate | date}} </p>   
+<h3>Date Expression </h3>
+<p>Date Object : {{toDate | date}} </p> 
+<p>Number Date : {{numDate | date}} </p>
+<p>ISO Date : {{strDate | date}} </p>
+<h3>Custom Format example</h3>
+<p>{{toDate | date:'dd/MM/y'}} </p><!-- 24/05/2020 -->
+<p>{{toDate | date:'dd/MM/yy HH:mm'}}</p><!-- May 24, 2020, 7:17:26 PM -->
+<h3>Timezone Example</h3>
+<p>Date in India (IST Time Zone) : {{toDate | date:'short':'IST'}}</p>
+<p>Date  in USA (CDT Time Zone)  : {{toDate | date:'short':'CDT'}}</p>
+<p>Date in India (+0530) : {{toDate | date:'short':'+0530'}}</p>
+<p>Date in USA (-0700) : {{toDate | date:'short':'-0500'}} </p>
+<h3>Country Locale Example</h3>
+<p>British date time is {{toDate | date:'dd/MM/yy HH:mm':'GMT':'en-GB'}}</p> 
+
+
