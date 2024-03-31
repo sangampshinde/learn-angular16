@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NgModel } from '@angular/forms';
+import { DatePipe } from '@angular/common';
 // interpolation
 import { InterpolationComponent } from './databinding/interpolation/interpolation.component';
 import { Interpolation1Component } from './databinding/interpolation1/interpolation1.component';
@@ -74,6 +75,14 @@ import { CustompipeComponent } from './pipes/custompipe/custompipe.component';
 import { DatepipeComponent } from './pipes/datepipe/datepipe.component';
 import { Pipe8Component } from './pipes/pipe8/pipe8.component';
 import { Pipe9Component } from './pipes/pipe9/pipe9.component';
+import { CcComponent } from './componentCommunication/cc/cc.component';
+import { ChildComponent } from './componentCommunication/child/child.component';
+import { Cc2Component } from './componentCommunication/cc2/cc2.component';
+import { Child2Component } from './componentCommunication/child2/child2.component';
+import { Cc3Component } from './componentCommunication/cc3/cc3.component';
+import { Child3Component } from './componentCommunication/child3/child3.component';
+
+
 
 
 
@@ -153,10 +162,19 @@ import { Pipe9Component } from './pipes/pipe9/pipe9.component';
       Pipe7Component,
   // custompipes
       TempConverterPipe,
-  CustompipeComponent,
-  DatepipeComponent,
-  Pipe8Component,
-  Pipe9Component,
+      CustompipeComponent,
+      DatepipeComponent,
+      Pipe8Component,
+      Pipe9Component,
+  //Component Communication 
+      CcComponent,
+      ChildComponent,
+      Cc2Component,
+      Child2Component,
+      Cc3Component,
+      Child3Component,
+ 
+  
       
      
     
@@ -173,7 +191,7 @@ import { Pipe9Component } from './pipes/pipe9/pipe9.component';
     FormsModule,
     
   ],
-  providers: [NgModel],
+  providers: [NgModel,DatePipe],
   bootstrap: [AppComponent]
 })
 
