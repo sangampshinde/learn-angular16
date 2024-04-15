@@ -81,6 +81,16 @@ import { Cc2Component } from './componentCommunication/cc2/cc2.component';
 import { Child2Component } from './componentCommunication/child2/child2.component';
 import { Cc3Component } from './componentCommunication/cc3/cc3.component';
 import { Child3Component } from './componentCommunication/child3/child3.component';
+import { Cc4Component } from './componentCommunication/cc4/cc4.component';
+import { Child4Component } from './componentCommunication/child4/child4.component';
+import { Cc5Component } from './componentCommunication/cc5/cc5.component';
+import { Child5Component } from './componentCommunication/child5/child5.component';
+import { Cc6Component } from './componentCommunication/cc6/cc6.component';
+import { Child6Component } from './componentCommunication/child6/child6.component';
+import { Child1Component } from './hooks/child1/child1.component';
+import { Parent1Component } from './hooks/parent1/parent1.component';
+import { Parent2Component } from './hooks/parent2/parent2.component';
+import { Parent3Component } from './hooks/parent3/parent3.component';
 
 
 
@@ -173,6 +183,16 @@ import { Child3Component } from './componentCommunication/child3/child3.componen
       Child2Component,
       Cc3Component,
       Child3Component,
+      Cc4Component,
+      Child4Component,
+      Cc5Component,
+      Child5Component,
+      Cc6Component,
+      Child6Component,
+      Child1Component,
+      Parent1Component,
+      Parent2Component,
+      Parent3Component,
  
   
       

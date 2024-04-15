@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CcComponent } from './cc.component';
+import { Cc6Component } from './cc6.component';
 
-describe('CcComponent', () => {
-  let component: CcComponent;
-  let fixture: ComponentFixture<CcComponent>;
+describe('Cc6Component', () => {
+  let component: Cc6Component;
+  let fixture: ComponentFixture<Cc6Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CcComponent]
+      declarations: [Cc6Component]
     });
-    fixture = TestBed.createComponent(CcComponent);
+    fixture = TestBed.createComponent(Cc6Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
